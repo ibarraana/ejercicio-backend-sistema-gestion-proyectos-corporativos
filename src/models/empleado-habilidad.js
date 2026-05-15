@@ -3,7 +3,7 @@
 import { DataTypes } from 'sequelize';
 import { sequelize } from '../config/database.js';
 
-const Empleado_Habilidad = sequelize.define('Empleado_Habilidad', {    
+const EmpleadoHabilidad  = sequelize.define('EmpleadoHabilidad', {    
     idEmpleado: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -16,6 +16,6 @@ const Empleado_Habilidad = sequelize.define('Empleado_Habilidad', {
     }
 })
 
-export default Empleado_Habilidad
+export default EmpleadoHabilidad
 
 
