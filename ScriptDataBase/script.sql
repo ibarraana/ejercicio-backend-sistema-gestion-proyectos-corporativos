@@ -1,0 +1,1 @@
+CREATE DATABASE sistema_de_gestión_de_proyectos_corporativos;

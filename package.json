@@ -1,0 +1,25 @@
+{
+  "name": "proyectoanaibarra",
+  "version": "1.0.0",
+  "description": "- *Empleado* (id, legajo, nombre, apellido, email, fechaIngreso)\r - *Departamento* (id, nombre, presupuestoAnual)\r - *Proyecto* (id, codigoProyecto, nombre, fechaInicio, fechaFinEstimada)\r - *Tarea* (id, descripcion, prioridad, estado)\r - *Habilidad* (id, nombreHabilidad)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"  
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "morgan": "^1.10.1",
+    "mysql2": "^3.22.3",
+    "sequelize": "^6.37.8"
+  }
+}
+
+
