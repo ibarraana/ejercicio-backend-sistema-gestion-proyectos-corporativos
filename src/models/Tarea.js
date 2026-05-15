@@ -1,7 +1,7 @@
 // Tarea (id, descripcion, prioridad, estado)
 
-import { DataTypes } from 'sequelize';
-import { sequelize } from '../config/database.js';
+import { DataTypes } from 'sequelize'
+import { sequelize } from '../config/database.js'
 
 const Tarea = sequelize.define('Tarea', {
     id: {

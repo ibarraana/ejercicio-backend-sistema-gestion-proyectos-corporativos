@@ -1,5 +1,5 @@
-import { Sequelize } from 'sequelize';
-import 'dotenv/config';
+import { Sequelize } from 'sequelize'
+import 'dotenv/config'
 
 export const sequelize = new Sequelize(
   process.env.DB_NAME,
@@ -10,7 +10,7 @@ export const sequelize = new Sequelize(
     port: process.env.DB_PORT,
     dialect: 'mysql'
   }
-);
+)
 
 // Función asíncrona para testear la salud de la conexión
 export const testConnection = async () => {
@@ -21,4 +21,4 @@ export const testConnection = async () => {
     console.error('❌ Error crítico:', error.message);
     process.exit(1); // Detenemos la app si no hay DB
   }
-};
+}

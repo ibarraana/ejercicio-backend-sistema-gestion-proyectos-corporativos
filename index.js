@@ -1,6 +1,13 @@
 import app from './src/app.js';
 import { sequelize, testConnection } from './src/config/database.js';
-import Product from './src/models/product.js'; 
+import departamento from './src/models/departamento.js';
+import empleado from './src/models/empleado.js';
+import habilidad from './src/models/habilidad.js';
+import empleado_habilidad from './src/models/empleado-habilidad.js';
+import rol from './src/models/rol.js';
+import tareas from './src/models/tareas.js';
+import proyecto from './src/models/proyecto.js';
+import empleado_proyecto from './src/models/empleado-proyecto.js';
 
 const startServer = async () => {
   try {

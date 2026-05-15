@@ -1,7 +1,7 @@
 // Proyecto: (id, codigoProyecto, nombre, fechaInicio, fechaFinEstimada)
 
-import { DataTypes } from 'sequelize';
-import { sequelize } from '../config/database.js';
+import { DataTypes } from 'sequelize'
+import { sequelize } from '../config/database.js'
 
 const Proyecto = sequelize.define('Proyecto', {
     id: {

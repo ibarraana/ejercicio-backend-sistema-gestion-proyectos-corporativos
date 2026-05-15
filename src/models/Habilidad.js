@@ -1,7 +1,7 @@
 // Habilidad (id, nombreHabilidad)
 
-import { DataTypes } from 'sequelize';
-import { sequelize } from '../config/database.js';
+import { DataTypes } from 'sequelize'
+import { sequelize } from '../config/database.js'
 
 const Habilidad = sequelize.define('Habilidad', {
     id: {

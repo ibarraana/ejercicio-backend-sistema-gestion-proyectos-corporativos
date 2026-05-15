@@ -1,7 +1,7 @@
 // Empleado_Proyecto_Rol (idEmpleado, idProyecto, idRol)
 
-import { DataTypes } from 'sequelize';
-import { sequelize } from '../config/database.js';
+import { DataTypes } from 'sequelize'
+import { sequelize } from '../config/database.js'
 
 const Empleado_Proyecto_Rol = sequelize.define('Empleado_Proyecto_Rol', {
     idEmpleado: {
