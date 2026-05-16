@@ -33,6 +33,11 @@ EmpleadoHabilidadesNivelDominio.belongsTo(NivelDominio, { foreignKey: 'idNivelDo
 Tarea.belongsTo(Proyecto, { foreignKey: 'idProyecto' })
 Proyecto.hasMany(Tarea, { foreignKey: 'idProyecto' })
 
+Empleado.belongsTo(Departamento, { foreignKey: 'idDepartamento' })
+Departamento.hasMany(Empleado, { foreignKey: 'idDepartamento' })
+
+
+
 export {
     Proyecto,
     Departamento,
