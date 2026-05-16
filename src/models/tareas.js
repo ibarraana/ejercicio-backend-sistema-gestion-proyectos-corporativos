@@ -3,8 +3,10 @@
 import { DataTypes } from 'sequelize'
 import { sequelize } from '../config/database.js'
 
+import Proyecto from './proyectos.js'
+
 const Tareas = sequelize.define('Tareas', {
-    id: {
+    idTarea: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true
@@ -23,7 +25,11 @@ const Tareas = sequelize.define('Tareas', {
     },
     idProyecto: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
+        references: {
+            model: Proyecto,
+            key: 'idProyecto'
+        }
     }
 })
 

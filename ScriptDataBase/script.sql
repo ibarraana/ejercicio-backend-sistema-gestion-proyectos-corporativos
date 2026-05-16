@@ -1,1 +1,3 @@
-CREATE DATABASE sistema_de_gestión_de_proyectos_corporativos;
+
+DROP DATABASE IF EXISTS sistema_de_gestión_de_proyectos_corporativos;
+CREATE DATABASE IF NOT EXISTS sistema_de_gestión_de_proyectos_corporativos;

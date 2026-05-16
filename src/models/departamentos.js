@@ -4,7 +4,7 @@ import { DataTypes } from 'sequelize'
 import { sequelize } from '../config/database.js'
 
 const Departamento = sequelize.define('Departamento', {
-    id: {
+    idDepartamento: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true

@@ -1,15 +1,7 @@
 import app from './src/app.js'
 import { sequelize, testConnection } from './src/config/database.js'
 
-import Proyecto from './src/models/proyectos.js'
-import Departamento from './src/models/departamentos.js'
-import Empleado from './src/models/empleados.js'
-import Tarea from './src/models/tareas.js'
-import Habilidades from './src/models/habilidades.js'
-import NivelDominio from './src/models/nivelDominio.js'
-import Roles from './src/models/roles.js'
-import EmpleadoProyectoRoles from './src/models/empleadoProyectoRoles.js'
-import EmpleadoHabilidadesNivelDominio from './src/models/empleadoHabilidadesNivelDominio.js'
+import './src/models/index.js'
 
 const startServer = async () => {
   try {
