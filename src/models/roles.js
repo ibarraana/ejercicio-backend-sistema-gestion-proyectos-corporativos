@@ -1,13 +1,13 @@
-// Rol: (id, descripcion)
+// Roles: (idRol, descripcion)
 
 import { DataTypes } from 'sequelize'
 import { sequelize } from '../config/database.js'
 
-const Rol = sequelize.define('Rol', {
-    id: {
+const Roles = sequelize.define('Roles', {
+    idRol: {
         type: DataTypes.INTEGER,
-        autoIncrement: true,
-        primaryKey: true
+        primaryKey: true,
+        autoIncrement: true
     },
     descripcion: {
         type: DataTypes.STRING,
@@ -15,4 +15,4 @@ const Rol = sequelize.define('Rol', {
     }
 })
 
-export default Rol
+export default Roles

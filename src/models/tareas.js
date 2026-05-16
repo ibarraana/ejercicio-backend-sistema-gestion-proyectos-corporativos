@@ -1,9 +1,9 @@
-// Tarea (id, descripcion, prioridad, estado)
+// Tarea: (id, descripcion, prioridad, estado)
 
 import { DataTypes } from 'sequelize'
 import { sequelize } from '../config/database.js'
 
-const Tarea = sequelize.define('Tarea', {
+const Tareas = sequelize.define('Tareas', {
     id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
@@ -20,8 +20,11 @@ const Tarea = sequelize.define('Tarea', {
     estado: {
         type: DataTypes.STRING,
         allowNull: false
+    },
+    idProyecto: {
+        type: DataTypes.INTEGER,
+        allowNull: false
     }
 })
 
-export default Tarea
-  
+export default Tareas

@@ -1,19 +1,22 @@
-// Habilidad (id, nombreHabilidad)
+// Departamento (id, nombre, presupuestoAnual)
 
 import { DataTypes } from 'sequelize'
 import { sequelize } from '../config/database.js'
 
-const Habilidad = sequelize.define('Habilidad', {
+const Departamento = sequelize.define('Departamento', {
     id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true
     },
-    nombreHabilidad: {
+    nombre: {
         type: DataTypes.STRING,
+        allowNull: false
+    },
+    presupuestoAnual: {
+        type: DataTypes.DECIMAL(10, 2),
         allowNull: false
     }
 })
 
-export default Habilidad
-    
+export default Departamento

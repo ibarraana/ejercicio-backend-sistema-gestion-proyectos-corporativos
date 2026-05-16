@@ -26,13 +26,17 @@ const Empleado = sequelize.define('Empleado', {
         allowNull: false
     },
     fechaIngreso: {
-        type: DataTypes.DATE,
+        type: DataTypes.DECIMAL(10, 2),
         allowNull: false
-    },    
-    idDepartamento: { // Aqui establezco la FK (Foreign Key) desde Emplaado a Departamento
+    },
+    idDepartamento: {
         type: DataTypes.INTEGER,
         allowNull: false
     },
+    idTarea: {
+        type: DataTypes.INTEGER,
+        allowNull: false
+    }
 })
 
 export default Empleado

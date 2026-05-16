@@ -15,10 +15,10 @@ export const sequelize = new Sequelize(
 // Función asíncrona para testear la salud de la conexión
 export const testConnection = async () => {
   try {
-    await sequelize.authenticate();
-    console.log('✅ Base de datos lista.');
+    await sequelize.authenticate()
+    console.log('✅ Base de datos lista.')
   } catch (error) {
-    console.error('❌ Error crítico:', error.message);
-    process.exit(1); // Detenemos la app si no hay DB
+    console.error('❌ Error crítico:', error.message)
+    process.exit(1) // Detenemos la app si no hay DB
   }
 }

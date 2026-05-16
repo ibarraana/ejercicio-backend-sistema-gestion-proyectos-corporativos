@@ -1,23 +1,24 @@
-// Empleado_Proyecto_Rol (idEmpleado, idProyecto, idRol)
+// empleadoHabilidadesNivelDominio (idEmpleado, idHabilidad, idNivelDominio)
 
 import { DataTypes } from 'sequelize'
 import { sequelize } from '../config/database.js'
 
-const Empleado_Proyecto_Rol = sequelize.define('Empleado_Proyecto_Rol', {
+const EmpleadoHabilidadesNivelDominio = sequelize.define('EmpleadoHabilidadesNivelDominio', {
     idEmpleado: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true
     },
-    idProyecto: {
+    idHabilidad: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true
     },
-    idRol: {
+    idNivelDominio: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true
-    }})
+    }
+})
 
-export default Empleado_Proyecto_Rol
+export default EmpleadoHabilidadesNivelDominio
